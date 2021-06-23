@@ -2,10 +2,133 @@
 @import './config/variables';
 @import './config/mixins';
 
-h1 {
-    font-size: 80;
-    color: blue;
+.wrapper {
+    font-family: 'Manrope', sans-serif;
+    width: 100%;
+    background: #080C20;
+    padding: 81px 0px 117px;
 }
+
+.logo {
+    background: url(../img/header/logo.svg) no-repeat;
+    width: 120px;
+    height: 35px;
+    margin-left: 165px;
+}
+
+.intro {
+    margin-top: 96px;
+    @include flexiblePlacement(space-between, none, none, none);
+}
+
+.intro__background-left {
+    background: url(../img/header/left-picture.svg) no-repeat;
+    width: 388px;
+    height: 460px;
+}
+
+.intro__title {
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    line-height: 56px;
+    max-width: 530px;
+    text-align: center;
+}
+
+.intro__text {
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    color: #777F98;
+    max-width: 470px;
+    text-align: center;
+    margin-top: 24px;
+    margin-left: 15px;
+}
+
+.color-text {
+    color: #3EE9E5;
+}
+
+.intro-center {
+    background: url(../img/header/center-picture.svg) no-repeat;
+    width: 544px;
+    height: 460px; 
+    padding-top: 88px;
+    @include flexiblePlacement(none, center, column, none);
+}
+
+.intro__background-right {
+    background: url(../img/header/right-picture.svg) no-repeat;
+    width: 339px;
+    height: 460px;  
+}
+
+.mouse-picture {
+    background: url(../img/header/mouse.svg) no-repeat;
+    width: 26px;
+    height: 42px;
+    margin-top: 68px;
+}
+
+/* MAIN */
+.main {
+    margin-top: 203px;
+    @include flexiblePlacement(center, center, none, none);
+    padding: 0px 165px;
+}
+
+.cards {
+    @include flexiblePlacement(center, none, none, none);
+    margin-bottom: 205px;
+}
+
+.card-picture {
+    height: 164px;
+    width: 160px;
+}
+
+.card-picture-cat {
+    background: url(../img/main/cat.svg) no-repeat;
+}
+
+.card-picture-bank {
+    background: url(../img/main/bank.svg) no-repeat;
+}
+
+.card-picture-coctail {
+    background: url(../img/main/coctail.svg) no-repeat;
+}
+
+.card-picture-car {
+    background: url(../img/main/car.svg) no-repeat;
+}
+
+.card:not(:last-child) {
+    margin-right: 30px;
+}
+
+.card:nth-child(even) {
+    margin-top: 47px;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 48px 0 23px;
+}
+
+.card-text {
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    color: #777F98;
+    width: 240px;
+}
+
 
 
 
