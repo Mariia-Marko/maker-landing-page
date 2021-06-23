@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,EAAE,CAAC;EACC,SAAS,EAAE,EAAE;EACb,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "style.scss",
+        "config/_normalize.scss",
+        "config/_variables.scss",
+        "config/_mixins.scss",
+        "config/_media.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

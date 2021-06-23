@@ -1,0 +1,12 @@
+@import './config/normalize';
+@import './config/variables';
+@import './config/mixins';
+
+h1 {
+    font-size: 80;
+    color: blue;
+}
+
+
+
+@import './config/media';
