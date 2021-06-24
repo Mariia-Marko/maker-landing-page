@@ -16,6 +16,7 @@
     margin-left: 165px;
 }
 
+
 .intro {
     margin-top: 96px;
     @include flexiblePlacement(space-between, none, none, none);
@@ -75,7 +76,7 @@
 /* MAIN */
 .main {
     margin-top: 203px;
-    @include flexiblePlacement(center, center, none, none);
+    @include flexiblePlacement(center, center, column, none);
     padding: 0px 165px;
 }
 
@@ -129,6 +130,118 @@
     width: 240px;
 }
 
+//PRICE
+.price {
+    @include flexiblePlacement(center, center, column, none);
+}
+
+.price__title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    color: white;
+}
+
+.price__text {
+    text-align: center;
+    color: #777F98;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 540px;
+    margin: 24px 0 105px;
+}
+
+.card-wrapper {
+    @include flexiblePlacement(center, center, none, none);
+}
+
+.card-small {
+    width: 445px;
+    height: 425px;
+    background: #093F68;
+    border-radius: 8px;
+    margin-right: 30px;
+    position: relative;
+    order: 1;
+    padding: 0 38px;
+}
+
+.card-big {
+    width: 445px;
+    height: 449px;
+    background: #3EE9E5;
+    border-radius: 8px; 
+    position: relative;
+    order: 1;
+    padding-left: 38px;
+}
+
+.card-big::before {
+    position: absolute;
+    content: '';
+    background: url(../img/main/picture-for-big-card.svg) no-repeat;
+    width: 50px;
+    height: 66px;
+    order: 5;
+
+    top: -34px;
+} 
+
+.card-small::before {
+    position: absolute;
+    content: '';
+    background: url(../img/main/piture-for-small-card.svg) no-repeat;
+    width: 50px;
+    height: 64px;
+    order: 5;
+    top: -23px;
+}
+
+.card-small__title {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 50px 0 19px;
+}
+
+.card-small__text {
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.card-price {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    color: #FFFFFF;
+    margin: 19px 0;
+    
+}
+
+.card-small__item {
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+    position: relative;
+    margin-left: 25px;
+}
+
+.card-small__item::before {
+    content: '';
+    position: absolute;
+    background: url(../img/main/blue-check-mark.svg) no-repeat;
+    width: 12px;
+    height: 9px;
+    top: 8px;
+    left: -22px;
+}
 
 
 
